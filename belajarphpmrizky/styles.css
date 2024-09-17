@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======index.php====== */
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.navbar a:nth-child(2){
+    font-weight: 600;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #f4f4f4;
+  width: 250px;
+  padding: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar ul li a:hover{
+    font-weight: 600;
+}
+
+/* Content */
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* =======profile.php======= */
+
+.profile-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-card{
+    background-color: whitesmoke;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.deskripsi{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+.deskripsi h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect untuk menyala */
+.info-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Efek cahaya hijau */
+  background-color: #f0f0f0; /* Sedikit perubahan warna background */
+}
